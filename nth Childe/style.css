@@ -1,0 +1,31 @@
+.pragraph:nth-child(even) {
+  background-color: rgb(175, 233, 233);
+}
+.pragraph::first-line {
+  color: rgb(17, 0, 250);
+}
+.pragraph {
+  border: 2px solid green;
+}
+.gapping {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pragraph::first-letter {
+  font-size: 30px;
+  color: rgb(255, 0, 0);
+}
+
+.pragraph {
+  padding: 50px;
+  background-color: rgb(229, 236, 129);
+  transition: transform 0.5s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.pragraph:hover {
+  transform: scale(1.2);
+}

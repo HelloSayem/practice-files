@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* global work  */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1390px;
+
+  margin: auto;
+  /* background-color: aqua; */
+}
+
+/* backgroung work  */
+.bg-img {
+  background-image: url(asets/bg.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* pic work  */
+.all-boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.all_pic {
+  background-color: blue;
+  width: 350px;
+  height: 200px;
+  margin-top: 200px;
+}
+.all_pic:nth-child(1) {
+  background-image: url(asets/horse.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.all_pic:nth-child(2) {
+  background-image: url(asets/horin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.all_pic:nth-child(3) {
+  background-image: url(asets/monkey.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.all_pic:nth-child(4) {
+  background-image: url(asets/cow.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* animation */
+.all_pic:hover {
+  -webkit-animation: kenburns-bottom 5s ease-out both;
+  animation: kenburns-bottom 5s ease-out both;
+  background-size: cover;
+}
+
+@-webkit-keyframes kenburns-bottom {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+    transform-origin: 50% 84%;
+    background-size: cover;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(15px);
+    transform: scale(1.25) translateY(15px);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    background-size: cover;
+  }
+}
+@keyframes kenburns-bottom {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 84%;
+    transform-origin: 50% 84%;
+    background-size: cover;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(15px);
+    transform: scale(1.25) translateY(15px);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    background-size: cover;
+  }
+}
